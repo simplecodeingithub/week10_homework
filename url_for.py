@@ -62,7 +62,7 @@ def about():
                 <p>Created by: Your Name</p>
                 <!-- Dynamic date generation using Python's datetime module -->
                 <!-- __import__() is used here to import a module dynamically -->
-                <p>Last Updated: {__import__('datetime').datetime.now().strftime('%B %d, %Y')}</p>
+                <p>Last Updated: {__import__('datetime').datetime.now()}</p>
             </div>
         </body>
     </html>

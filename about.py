@@ -18,25 +18,24 @@ def about():
         <head>
             <title>About This Flask App</title>
             <style>
-                /* Basic CSS styling for the about page */
                 body {{ 
-                    font-family: Arial, sans-serif;  /* Set font family */
-                    line-height: 1.6;               /* Set line spacing */
-                    margin: 0;                      /* Remove default margin */
-                    padding: 20px;                  /* Add padding around content */
+                    font-family: Arial, sans-serif;  
+                    line-height: 1.6;              
+                    margin: 0;                    
+                    padding: 20px;                  
                 }}
                 .container {{ 
-                    max-width: 800px;               /* Limit content width */
-                    margin: 0 auto;                 /* Center the container */
+                    max-width: 800px;               
+                    margin: 0 auto;                 
                 }}
                 h1 {{ 
-                    color: #333;                    /* Dark gray heading color */
+                    color: #333;                   
                 }}
                 .nav {{ 
-                    margin-bottom: 20px;            /* Space after navigation */
+                    margin-bottom: 20px;           
                 }}
                 .nav a {{ 
-                    margin-right: 15px;             /* Space between navigation links */
+                    margin-right: 15px;            
                 }}
             </style>
         </head>
@@ -73,14 +72,6 @@ def about():
                 </ul>
 
                 <!-- Footer information -->
-                <p>Created by: Your Name</p>
-
-                <!-- Dynamic date generation -->
-                <!-- __import__() is a Python built-in function that imports a module at runtime -->
-                <!-- This imports the datetime module, then accesses the datetime class -->
-                <!-- .now() gets the current date and time -->
-                <!-- .strftime() formats the date as a readable string (Month Day, Year) -->
-                <p>Last Updated: {__import__('datetime').datetime.now().strftime('%B %d, %Y')}</p>
             </div>
         </body>
     </html>
