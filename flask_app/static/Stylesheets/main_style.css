@@ -1,0 +1,82 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #f0f4f8, #d9e4ea);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Container Styling */
+.container {
+    background: linear-gradient(to bottom, #ffffff, #f7f9fc); /* White to soft blue */
+    width: 70%;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+/* Heading Styles */
+h1 {
+    color: #0056b3;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+h2 {
+    color: #333;
+    font-size: 2rem;
+}
+
+/* Features & Steps */
+h3 {
+    color: #007BFF;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+ul, ol {
+    text-align: left;
+    display: inline-block;
+    margin: 20px auto;
+    font-size: 1.2rem;
+    padding-left: 20px;
+}
+
+li {
+    margin: 10px 0;
+    color: #444;
+}
+
+/* Links & Buttons */
+a {
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+/* Footer Styling */
+.footer {
+    width: 100%;
+    margin-top: 30px;
+    padding: 15px;
+    background: #007BFF;
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
