@@ -50,6 +50,8 @@ def home(name):
     <html>
         <head>
             <title>Home Page</title>
+             <!-- Add a link to BS CSS -->
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
             <link rel="stylesheet" href="{}" type="text/css">
         </head>
        <body>
@@ -75,6 +77,10 @@ def home(name):
             <p><a href="{}">About</a> | <a href="{}">Contact</a></p> 
         </div>
             <footer class="footer">Powered by Flask</footer>
+            
+                <!-- Bootstrap JS -->
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
         </body>
     </html>
     """.format(css_url, name, about_url, contact_url)
@@ -94,6 +100,7 @@ def about(name):
     <html>
         <head>
             <title>About Page</title>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
             <link rel="stylesheet" href="{}" type="text/css">
         </head>
         <div class="container">
@@ -113,6 +120,9 @@ def about(name):
                 <p>Back to <a href="{}">Home</a></p>
             </div>
             <footer class="footer">Powered by Flask</footer>
+             <!-- Bootstrap JS -->
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
         </body>
     </html>
     """.format(css_url, name, contact_url, home_url)
@@ -140,6 +150,7 @@ def contact(name):
     <html>
         <head>
             <title>Contact Page</title>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
             <link rel="stylesheet" href="{}" type="text/css">
         </head>
         <body>
@@ -157,6 +168,9 @@ def contact(name):
                 <p><a href="{}">Home</a> | <a href="{}">About</a></p>
             </div>
             <footer class="footer">Powered by Flask</footer>
+             <!-- Bootstrap JS -->
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
         </body>
     </html>
     """.format(css_url, name, home_url,about_url)
