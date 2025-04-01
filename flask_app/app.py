@@ -42,7 +42,7 @@ def home(name):
     about_url = url_for('about', name=name)
     contact_url = url_for('contact', name=name)
 
-    # Dynamically link to the main_style.css file in the static folder
+    # Dynamically link to the main_style.css file in the static folder-CSS file is dynamically linked to HTML pages
     css_url = url_for('static', filename='Stylesheets/main_style.css')
 
     return """
@@ -76,11 +76,7 @@ def home(name):
               <hr>
             <p><a href="{}">About</a> | <a href="{}">Contact</a></p> 
         </div>
-            <footer class="footer">Powered by Flask</footer>
-            
-                <!-- Bootstrap JS -->
-            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+            <footer class="footer">Powered by Flask</footer>              
         </body>
     </html>
     """.format(css_url, name, about_url, contact_url)
@@ -119,10 +115,7 @@ def about(name):
                 <hr>
                 <p>Back to <a href="{}">Home</a></p>
             </div>
-            <footer class="footer">Powered by Flask</footer>
-             <!-- Bootstrap JS -->
-            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+            <footer class="footer">Powered by Flask</footer>            
         </body>
     </html>
     """.format(css_url, name, contact_url, home_url)
@@ -168,9 +161,6 @@ def contact(name):
                 <p><a href="{}">Home</a> | <a href="{}">About</a></p>
             </div>
             <footer class="footer">Powered by Flask</footer>
-             <!-- Bootstrap JS -->
-            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
         </body>
     </html>
     """.format(css_url, name, home_url,about_url)
