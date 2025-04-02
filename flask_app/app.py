@@ -36,7 +36,7 @@ def index(name, age):
 
 # Decorator used to map the URL '/<string:name>' to a specific(home) function,the URL ('/') is associated with the root URL.
 # Home Page Route-This route takes the 'name' parameter from the URL.
-@app.route('/<string:name>')
+@app.route('/home/<string:name>')
 def home(name):
     # url_for is used to dynamically generate the URLs for the 'about' and 'contact' pages and with the 'name' parameter.
     about_url = url_for('about', name=name)
@@ -59,11 +59,11 @@ def home(name):
                 <h1>Welcome to My Flask Application</h1>
                 <h2>Hello, {}!</h2>
                 <p>This is a simple Flask web application.</p>
-
+                
                 <h3>Features:</h3>
                 <ul>
                     <li>Dynamic routing with Flask</li>
-                    <li>Styled with CSS</li>
+                    <li>Styled with CSS and Bootstrap CSS</li>
                     <li>Supports GET and POST requests</li>
                 </ul>
 
@@ -82,10 +82,12 @@ def home(name):
     """.format(css_url, name, about_url, contact_url)
 
 
-# About Page Route
+# About Page Route (with and without name)
+@app.route('/about')
 @app.route('/about/<string:name>')
-def about(name):
-    contact_url = url_for('contact', name=name)
+def about(name=None):
+    name = name or "Guest"  # Replace None with "Guest"
+    contact_url = url_for('contact')
     home_url = url_for('home', name=name)
 
     # Dynamically link to the main_style.css file in the static folder
@@ -121,11 +123,14 @@ def about(name):
     """.format(css_url, name, contact_url, home_url)
 
 
+# Contact Page Route (with and without name)
+@app.route('/contact', methods=['GET', 'POST'])
 # Contact Page Route -This route takes the 'name' parameter and handles both GET and POST requests.
 @app.route('/contact/<string:name>', methods=['GET', 'POST'])
-def contact(name):
-    home_url = url_for('home', name=name)
-    about_url = url_for('about', name=name)
+def contact(name=None):
+    name = name or "Guest"  # Replace None with "Guest"
+    home_url = url_for('home', name=name) 
+    about_url = url_for('about')
     # Dynamically link to the main_style.css file in the static folder
     css_url = url_for('static', filename='Stylesheets/main_style.css')
 

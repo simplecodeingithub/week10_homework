@@ -1,7 +1,7 @@
-/* General Styling */
+/* Styling */
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(to right, #f0f4f8, #d9e4ea);
+    background: linear-gradient(to right, #eef2f3, #8e9eab); /* Soft grayish-blue */
     margin: 0;
     padding: 0;
     text-align: center;
@@ -9,7 +9,7 @@ body {
 
 /* Container Styling */
 .container {
-    background: linear-gradient(to bottom, #ffffff, #f7f9fc); /* White to soft blue */
+    background: linear-gradient(to bottom, #ffffff, #ddeff7); /* White to light sky blue */
     width: 70%;
     margin: 50px auto;
     padding: 30px;
@@ -19,10 +19,10 @@ body {
 }
 
 .container:hover {
-    transform: scale(1.02);
+    transform: scale(1.02);  /* When the user hovers over the box, it slightly enlarges or zooms in by 2%. */
 }
 
-/* Heading Styles */
+/* Heading Styles, h1-dark blue,big and bold, h2 dark gray, h3 bright blue */
 h1 {
     color: #0056b3;
     font-size: 2.5rem;
@@ -34,13 +34,13 @@ h2 {
     font-size: 2rem;
 }
 
-/* Features & Steps */
 h3 {
     color: #007BFF;
     font-size: 1.5rem;
     font-weight: bold;
 }
 
+/* List Features & Steps */
 ul, ol {
     text-align: left;
     display: inline-block;
@@ -54,7 +54,7 @@ li {
     color: #444;
 }
 
-/* Links & Buttons */
+/* Links-Hyperlinks */
 a {
     text-decoration: none;
     color: #007BFF;
